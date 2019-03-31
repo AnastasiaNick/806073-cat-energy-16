@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Погребная](https://up.htmlacademy.ru/adaptive/16/user/806073).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Сёмин](https://htmlacademy.ru/profile/id39368).
 
 ---
 
