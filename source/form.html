@@ -27,7 +27,8 @@
       <section class="course-select">
         <h1 class="course-select__title page-title">Подбор программы</h1>
         <b class="course-select__description">Заполните анкету и мы подберем программу питания для вашего кота</b>
-        <form class="course-select__form course-form">
+        <form action="" class="course-select__form form">
+        <!--
           <fieldset class="course-form__item catinfo">
             <h3 class="visually-hidden">Данные кота</h3>
             <label class="catinfo__label" for="catname">Имя:*</label>
@@ -83,8 +84,63 @@
               </li>
             </ul>
           </fieldset>
-          <button class="course-form__button button">Отправить заявку</button>
-          <b class="course-form__note">* — Обязательные поля</b>
+        -->
+          <fieldset class="form__item">
+            <h3 class="visually-hidden">Данные кота</h3>
+            <div class="form__group">
+              <label class="form__label" for="catname">Имя:*</label>
+              <input class="form__input" id="catname" type="text" name="catname" value="" placeholder="Барсик">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="weight">Вес (кг):*</label>
+              <input class="form__input" id="weight" type="text" name="weight" value="" placeholder="7">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="age">Возраст (лет):</label>
+              <input class="form__input" id="age" type="text" name="age" value="" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="form__item">
+            <label class="form__label form__label--radio">Похудение
+              <input class="visually-hidden" type="radio" name="slim" checked />
+            </label>
+            <label class="form__label form__label--radio">Набор массы
+              <input class="visually-hidden" type="radio" name="weight gain" />
+            </label>
+            <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)
+              <input class="visually-hidden" type="radio" name="advice" />
+            </label>
+          </fieldset>
+          <fieldset class="form__item">
+            <h3 class="form__item-title page-title">Контактные данные (владельца кота)</h3>
+            <div class="form__group">
+              <label class="form__label" for="e-mail">E-mail:*</label>
+              <input class="form__input" id="e-mail" type="e-mail" name="e-mail" value="" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Телефон:*</label>
+              <input class="form__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
+            </div>
+          </fieldset>
+          <fieldset class="form__item">
+            <textarea class="form__area" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form__item">
+            <label class="form__label form__label--checkbox">Сахарозаменитель
+              <input class="visually-hidden" type="checkbox" name="sweetener" checked>
+            </label>
+            <label class="form__label form__label--checkbox">Питьевая вода
+              <input class="visually-hidden" type="checkbox" name="water">
+            </label>
+            <label class="form__label form__label--checkbox">Молоко
+              <input class="visually-hidden" type="checkbox" name="milk">
+            </label>
+            <label class="form__label form__label--checkbox">Витамины
+              <input class="visually-hidden" type="checkbox" name="vitamins">
+            </label>
+          </fieldset>
+          <button class="form__button button">Отправить заявку</button>
+          <b class="form__note">* — Обязательные поля</b>
         </form>
       </section>
     </main>
