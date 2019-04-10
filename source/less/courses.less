@@ -1,6 +1,7 @@
 .courses {
+  width: 280px;
   border: 2px solid blue;
-  padding: 15px;
+  padding-top: 22px 20px;
 }
 
 .course-list__image {
@@ -18,3 +19,15 @@
   font-family: "Arial", sans-serif;
   color: @light-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .courses {
+    width: 708px;
+}
+
+  @media (min-width: @desktop-width) {
+    .courses {
+      display: flex;
+      width: 1220px;
+    }
+  }

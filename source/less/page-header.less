@@ -1,3 +1,15 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   border: 2px solid blue;
+}
+
+.page-header__logo {
+  height: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 62px;
+  }
 }
