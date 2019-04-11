@@ -1,7 +1,5 @@
 .courses {
-  width: 280px;
-  border: 2px solid blue;
-  padding-top: 22px 20px;
+  padding: 22px 0;
 }
 
 .course-list__image {
@@ -22,13 +20,14 @@
 
 @media (min-width: @tablet-width) {
   .courses {
-    width: 708px;
+    display: flex;
+    width: @width-tablet;
   }
 }
 
 @media (min-width: @desktop-width) {
   .courses {
     display: flex;
-    width: 1220px;
+    width: @width-desktop;
   }
 }

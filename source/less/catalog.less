@@ -1,4 +1,17 @@
 .catalog {
-  border: 2px solid blue;
   padding: 20px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    display: flex;
+    width: @width-tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    display: flex;
+    width: @width-desktop;
+  }
 }

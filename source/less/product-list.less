@@ -19,3 +19,26 @@
 .product-list__item {
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-list__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .product-list__item {
+    margin-right: 80px;
+  }
+}

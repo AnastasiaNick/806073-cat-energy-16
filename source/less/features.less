@@ -1,13 +1,17 @@
 .features {
-  width: 280px;
-  border: 2px solid blue;
   padding: 20px 0;
 }
 
 @media (min-width: @tablet-width) {
   .features {
-    width: 708px;
     display: flex;
-    flex-wrap: wrap;
+    width: @width-tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    display: flex;
+    width: @width-tablet;
   }
 }
