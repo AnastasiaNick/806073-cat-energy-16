@@ -31,26 +31,28 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="course-select">
+      <div class="container">
         <h1 class="course-select__title page-title">Подбор программы</h1>
-        <b class="course-select__description">Заполните анкету и мы подберем программу питания для вашего кота</b>
+      <section class="course-select">
+
         <form action="" class="course-select__form form">
+          <p class="course-select__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <fieldset class="form__item">
             <h3 class="visually-hidden">Данные кота</h3>
-            <div class="form__group">
+            <div class="form__group form__group--name">
               <label class="form__label" for="catname">Имя:*</label>
               <input class="form__input" id="catname" type="text" name="catname" value="" placeholder="Барсик">
             </div>
-            <div class="form__group">
+            <div class="form__group form__group--weight">
               <label class="form__label" for="weight">Вес (кг):*</label>
               <input class="form__input" id="weight" type="text" name="weight" value="" placeholder="7">
             </div>
-            <div class="form__group">
+            <div class="form__group form__group--age">
               <label class="form__label" for="age">Возраст (лет):</label>
               <input class="form__input" id="age" type="text" name="age" value="" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--radio">
             <label class="form__label form__label--radio">Похудение
               <input class="visually-hidden" type="radio" name="slim" checked />
             </label>
@@ -62,20 +64,22 @@
             </label>
           </fieldset>
           <fieldset class="form__item">
-            <h3 class="form__item-title page-title">Контактные данные (владельца кота)</h3>
-            <div class="form__group">
+            <h3 class="form__item-title">Контактные данные (владельца кота)</h3>
+            <div class="form__group form__group--mail">
               <label class="form__label" for="e-mail">E-mail:*</label>
-              <input class="form__input" id="e-mail" type="e-mail" name="e-mail" value="" placeholder="kuklachev@gmail.com">
+              <input class="form__input" id="e-mail" type="email" name="e-mail" value="" placeholder="kuklachev@gmail.com">
             </div>
-            <div class="form__group">
+            <div class="form__group form__group--phone">
               <label class="form__label" for="phone">Телефон:*</label>
               <input class="form__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
             </div>
           </fieldset>
           <fieldset class="form__item">
-            <textarea class="form__area" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <h3 class="form__item-title">Комментарий</h3>
+            <textarea class="form__area" placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--checkbox">
+            <h3 class="form__item-title">Дополнительно</h3>
             <label class="form__label form__label--checkbox">Сахарозаменитель
               <input class="visually-hidden" type="checkbox" name="sweetener" checked>
             </label>
@@ -93,41 +97,49 @@
           <small class="form__note">* — Обязательные поля</small>
         </form>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__text">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+      <div class="container">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__title">приглашаем<br>к сотрудничеству дилеров!</b>
+          <p class="contacts__text">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="page-footer__map map">
-        <iframe class="map__ref" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554412292933!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <img class="map__image" src="/img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта проезда">
+        <iframe class="map__ref"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554412292933!5m2!1sru!2sru"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта проезда">
       </div>
-      <a class="page-footer__logo-text">
-        <img class="page-footer__logo-text-image" src="img/logotype-catenergy-text.png" width="128" height="24" alt="Кэт Энэрджи">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/catenergy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/catenergy">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/catenergy">Мы в Фейсбуке</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__logo-text">
-          <img class="copyright__logo-text-image" src="img/logotype-htmlacademy-text.png" width="101" height="18" alt="HTML Academy">
+      <div class="container">
+        <a class="page-footer__logo-text">
+          <img class="page-footer__logo-text-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энэрджи">
         </a>
-        <a class="copyright__logo">
-          <img class="copyright__logo-image" src="img/logotype-htmlacademy.png" width="33" height="38" alt="HTML Academy">
-        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/catenergy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/catenergy">Мы в
+                Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/catenergy">Мы в Фейсбуке</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__logo-text">
+            <span class="copyright__author">HTML Academy</span>
+          </a>
+          <a class="copyright__ref">
+            <img class="copyright__logo-image" src="img/htmlacademy.svg" width="195" height="21" alt="HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,1 +1,117 @@
 /* form styles */
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form__item {
+  border: none;
+  padding: 0;
+}
+
+.form__group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.form__input {
+  /* height: 45px; */
+  padding: 13px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @black;
+  border: 1px solid @grey;
+}
+
+.form__group--name .form__input {
+  width: 80%;
+}
+
+.form__group--weight .form__input {
+  width: 72%;
+}
+
+.form__group--age .form__input {
+  width: 61%;
+}
+
+.form__item--radio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 18px 0;
+}
+
+.form__label--radio:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.form__item-title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  font-size: 24px;
+}
+
+.form__group--mail .form__input {
+  width: 76%;
+}
+
+.form__group--phone .form__input {
+  width: 72%;
+}
+
+.form__area {
+  width: 100%;
+  padding: 12px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @light-grey;
+  border: 1px solid @grey;
+}
+
+.form__item--checkbox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form__label--checkbox:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.form__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  border: none;
+}
+
+.form__note {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 90%;
+  }
+}

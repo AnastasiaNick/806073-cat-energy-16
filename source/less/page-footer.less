@@ -1,1 +1,21 @@
 /* page-footer-styles */
+.page-footer {
+  background-color: @grey;
+}
+
+.page-footer__logo-text {
+  margin: 35px 0 25px;
+}
+
+.page-footer .container--copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer .container--copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
