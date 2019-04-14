@@ -1,6 +1,14 @@
 /* page-footer-styles */
 .page-footer {
+  position: relative;
   background-color: @grey;
+}
+
+.page-footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 22px;
 }
 
 .page-footer__logo-text {
@@ -17,5 +25,11 @@
   .page-footer .container--copyright {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__contacts {
+    width: 100%;
   }
 }
