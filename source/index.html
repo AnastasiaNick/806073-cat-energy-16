@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header__container">
+      <!-- <div class="container page-header__container"> -->
+        <div class="container">
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="101" height="38" alt="Кэт Энэрджи">
           </a>
-          <nav class="main-nav main-nav--closed">
+        </div>
+          <nav class="main-nav main-nav--opened">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <div class="main-nav__wrapper">
+            <!-- <div class="main-nav__wrapper"> -->
               <ul class="main-nav-list site-list">
                 <li class="site-list__item">
                   <a class="site-list__link" href="index.html">Главная</a>
@@ -26,25 +29,25 @@
                   <a class="site-list__link" href="form.html">Подбор программы</a>
                 </li>
               </ul>
-            </div>
+            <!-- </div> -->
           </nav>
+      <!-- </div> -->
+    </header>
+    <main class="page-main">
+      <section class="promo">
+        <div class="container">
+          <h1 class="promo__title page-title">Функциональное питание для котов</h1>
+          <b class="promo__slogan">Занялся собой? Займись котом</b>
+          <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Фото Кэт Энэрджи">
+          <a class="button promo__button" type="button">Подобрать программу</a>
         </div>
-      </header>
-      <main class="page-main">
-        <section class="promo">
-          <div class="container">
-            <h1 class="promo__title page-title">Функциональное питание для котов</h1>
-            <b class="promo__slogan">Занялся собой? Займись котом</b>
-            <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Фото Кэт Энэрджи">
-            <a class="button promo__button" type="button">Подобрать программу</a>
-          </div>
-        </section>
-        <section class="courses">
-          <div class="container">
-            <ul class="courses__list course-list">
-              <li class="course-list__item course-list__item--slim">
-                <h2 class="course-list__title">Похудение</h2>
-                <!-- Выносим в псевдоэлемент <div class="course-list__image course-list__image--slim"></div> -->
+      </section>
+      <section class="courses">
+        <div class="container">
+          <ul class="courses__list course-list">
+            <li class="course-list__item course-list__item--slim">
+              <h2 class="course-list__title">Похудение</h2>
+              <!-- Выносим в псевдоэлемент <div class="course-list__image course-list__image--slim"></div> -->
                 <p class="course-list__description">
                   Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
                   поможет вашему питомцу сбросить лишний вес.
@@ -94,37 +97,37 @@
       </section>
       <section class="example">
         <div class="container">
-        <h2 class="example__title page-title">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="example-list">
-          <li class="example-list__item">
-            <span class="example-list__value">5 кг</span>
-            <span class="example-list__field">снижение веса</span>
-          </li>
-          <li class="example-list__item">
-            <span class="example-list__value">60 дней</span>
-            <span class="example-list__field">затрачено времени</span>
-          </li>
-        </ul>
-        <span class="example__costs">Затраты на питание: 15 000 руб.</span>
-        <div class="example__wrapper slider">
-          <h2 class="visually-hidden">Фото кота ДО и ПОСЛЕ</h2>
-          <ul class="slider__list">
-            <li class="slider__item slider__item--fatcat">
-              <img class="slider__item-image" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото толстого кота">
+          <h2 class="example__title page-title">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <ul class="example-list">
+            <li class="example-list__item">
+              <span class="example-list__value">5 кг</span>
+              <span class="example-list__field">снижение веса</span>
             </li>
-            <li class="slider__item slider__item--slimcat">
-              <img class="slider__item-image" src="img/after-mobile@1x.png" width="311" height="232" alt="Фото стройного кота">
+            <li class="example-list__item">
+              <span class="example-list__value">60 дней</span>
+              <span class="example-list__field">затрачено времени</span>
             </li>
           </ul>
-          <p class="example__toggles slider__toggles">
-            <button class="slider__toggle" type="button">Было</button>
-            <button class="slider__toggle" type="button">Стало</button>
-          </p>
-        </div>
+          <span class="example__costs">Затраты на питание: 15 000 руб.</span>
+          <div class="example__wrapper slider">
+            <h2 class="visually-hidden">Фото кота ДО и ПОСЛЕ</h2>
+            <ul class="slider__list">
+              <li class="slider__item slider__item--fatcat">
+                <img class="slider__item-image" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото толстого кота">
+              </li>
+              <li class="slider__item slider__item--slimcat">
+                <img class="slider__item-image" src="img/after-mobile@1x.png" width="311" height="232" alt="Фото стройного кота">
+              </li>
+            </ul>
+            <p class="example__toggles slider__toggles">
+              <button class="slider__toggle" type="button">Было</button>
+              <button class="slider__toggle" type="button">Стало</button>
+            </p>
+          </div>
         </div>
       </section>
     </main>
