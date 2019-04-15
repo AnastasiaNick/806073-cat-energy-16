@@ -8,8 +8,9 @@
   background: @brand-color url("/img/index-background-mobile@1x.jpg") no-repeat center;
   background-size: cover;
   padding-top: 27px;
-  height: 305px;
+  min-height: 305px;
   text-align: center;
+  width: 100%;
 }
 
 .promo__title {
@@ -56,7 +57,17 @@
     color: @black;
   }
 
+  .promo__title {
+    max-width: 430px;
+  }
+
   .promo__image {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding-left: 75px;
   }
 }
