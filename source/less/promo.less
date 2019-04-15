@@ -1,9 +1,62 @@
 .promo {
-  background: @brand-color url("/img/index-background-mobile@1x.jpg") no-repeat center;
+  position: relative;
   margin-bottom: 20px;
   color: @white;
 }
 
+.promo__top {
+  background: @brand-color url("/img/index-background-mobile@1x.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 27px;
+  height: 305px;
+  text-align: center;
+}
+
+.promo__title {
+  margin-bottom: 24px;
+}
+
+.promo__slogan {
+  .mobile-main-font();
+}
+
+.promo__center {
+  position: absolute;
+  bottom: 50px;
+}
+
+.promo__bottom {
+  padding-top: 140px;
+}
+
 .promo__button {
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .promo__top {
+    background: none;
+    text-align: left;
+  }
+
+  .promo__bottom {
+    width: 243px;
+    padding-top: 0;
+  }
+
+  .promo__title,
+  .promo__slogan {
+    color: @black;
+  }
+
+  .promo__image {
+    display: none;
+  }
 }
