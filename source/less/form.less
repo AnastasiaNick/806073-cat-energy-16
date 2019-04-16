@@ -50,8 +50,33 @@
   border: 1px solid @grey;
 }
 
+.form__label--radio,
+.form__label--checkbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 42px;
+}
+
 .form__label--radio:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+.form__input[type="radio"] + span::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -5px;
+  left: -5px;
+  border: 9px solid @white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px @grey;
+  background-color: @white;
+}
+
+.form__input[type="radio"]:checked + span::before {
+  background-color: @brand-color;
 }
 
 .form__item-title {
@@ -90,7 +115,31 @@
 }
 
 .form__label--checkbox:not(:last-child) {
-  margin-bottom: 11px;
+  margin-bottom: 25px;
+}
+
+.form__input[type="checkbox"] + span::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -5px;
+  left: 0;
+  border: 1px solid @grey;
+  background-color: @white;
+}
+
+.form__input[type="checkbox"]:checked + span::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  margin-top: 3px;
+  top: -100%;
+  left: 9px;
+  border-right: 1px solid @brand-color;
+  border-bottom: 1px solid @brand-color;
+  transform: translateY(50%) rotate(45deg);
 }
 
 .form__button {
