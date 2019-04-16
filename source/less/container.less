@@ -1,0 +1,17 @@
+/* container-styles */
+.container {
+  width: @width;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: @width-tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: @width-desktop;
+  }
+}

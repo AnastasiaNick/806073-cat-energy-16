@@ -1,0 +1,63 @@
+/* features-list styles */
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features-list__item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features-list__logo {
+  height: 60px;
+  width: 60px;
+}
+
+.features-list__logo--food {
+  background: @brand-color url("../img/advantage-leaf@1x.png") no-repeat center;
+}
+
+.features-list__logo--way {
+  background: @brand-color url("../img/advantage-powder@1x.png") no-repeat center;
+}
+
+.features-list__logo--process {
+  background: @brand-color url("../img/advantage-dining@1x.png") no-repeat center;
+}
+
+.features-list__logo--duration {
+  background: @brand-color url("../img/advantage-clock@1x.png") no-repeat center;
+}
+
+.features-list__description {
+  width: 71%;
+  font-family: "Arial", sans-serif;
+  color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-list__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    margin-right: 80px;
+  }
+}

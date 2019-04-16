@@ -1,5 +1,9 @@
 @import "variables.less";
+@import "mixins.less";
 @import "visually-hidden.less";
+@import "container.less";
+@import "features-list.less";
+@import "example-list.less";
 @import "page-header.less";
 @import "main-nav.less";
 @import "site-list.less";
@@ -41,11 +45,14 @@
 }
 
 body {
+  min-width: 320px;
   margin: 0;
+  padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: @font-size;
 }
 
 a {
   text-decoration: none;
+  color: @black;
 }

@@ -1,1 +1,24 @@
 /* promotion-banner styles */
+.promotion-banner {
+  width: 100%;
+  min-height: 290px;
+  margin-top: 40px;
+  background: @brand-color url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+}
+
+.promotion-banner__text {
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+@media (min-width: @desktop-width) {
+  .promotion-banner {
+    width: 245px;
+    margin-left: 80px;
+  }
+}

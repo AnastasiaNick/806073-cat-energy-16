@@ -1,1 +1,27 @@
 /* copyright styles */
+.copyright {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0 22px;
+}
+
+.copyright__author {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 23%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    width: 14%;
+  }
+}

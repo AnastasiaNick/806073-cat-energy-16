@@ -1,1 +1,39 @@
 /* course-list styles */
+.course-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-list__item {
+  padding: 20px 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .course-list__item {
+    width: 100%;
+    padding: 75px 50px 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .course-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .course-list__item {
+    padding: 35px 40px 55px;
+  }
+
+  .course-list__item--slim {
+    margin-right: 80px;
+  }
+}

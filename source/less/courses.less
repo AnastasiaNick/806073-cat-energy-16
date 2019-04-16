@@ -1,6 +1,5 @@
 .courses {
-  border: 2px solid blue;
-  padding: 15px;
+  padding: 22px 0;
 }
 
 .course-list__image {
@@ -17,4 +16,16 @@
 .course-list__description {
   font-family: "Arial", sans-serif;
   color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .courses {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .courses {
+    display: flex;
+  }
 }

@@ -1,3 +1,35 @@
+/* page-footer-styles */
 .page-footer {
-  border: 2px solid blue;
+  position: relative;
+  background-color: @grey;
+}
+
+.page-footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 22px;
+}
+
+.page-footer__logo-text {
+  margin: 35px 0 25px;
+}
+
+.page-footer .container--copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer .container--copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__contacts {
+    width: 100%;
+  }
 }
