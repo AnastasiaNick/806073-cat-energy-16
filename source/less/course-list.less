@@ -6,7 +6,53 @@
 }
 
 .course-list__item {
-  padding: 20px 10px;
+  margin-bottom: 20px;
+  padding: 35px 20px 20px;
+  background-color: @grey;
+}
+
+.course-list__title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding-left: 70px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.course-list__image {
+  height: 50px;
+  width: 50px;
+  background-color: @brand-color;
+}
+
+.course-list__description {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: "Arial", sans-serif;
+  line-height: 18px;
+  color: @light-grey;
+}
+
+.course-list__ref {
+  display: block;
+  position: relative;
+  padding-top: 22px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-top: 1px solid #d9d9d9;
+}
+
+.course-list__ref::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 65%;
+  right: 120px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,7 +64,35 @@
 
   .course-list__item {
     width: 100%;
-    padding: 75px 50px 55px;
+    padding: 77px 280px 58px 52px;
+    margin-bottom: 30px;
+  }
+
+  .course-list__item:nth-child(2) {
+    padding: 77px 315px 58px 52px;
+  }
+
+  .course-list__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .course-list__title {
+    padding-left: 0;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .course-list__ref {
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    border-top: none;
+  }
+
+  .course-list__ref::after {
+    top: 75%;
+    right: 220px;
   }
 }
 
@@ -30,10 +104,24 @@
   }
 
   .course-list__item {
-    padding: 35px 40px 55px;
+    max-width: 50%;
+    padding: 73px 55px 58px;
+  }
+
+  .course-list__item:nth-child(2) {
+    padding: 73px 55px 58px;
   }
 
   .course-list__item--slim {
     margin-right: 80px;
+  }
+
+  .course-list__title {
+    padding-left: 162px;
+    margin-bottom: 70px;
+  }
+
+  .course-list__ref {
+    padding-top: 10px;
   }
 }

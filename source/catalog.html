@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -13,21 +12,21 @@
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="101" height="38" alt="Кэт Энэрджи">
         </a>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav-list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav-list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <div class="container">
@@ -37,7 +36,7 @@
             <!-- Cat Energy PRO chiken 500 г -->
             <li class="product-list__item">
               <div class="product-list__image">
-                <img class=" product-list__image-chikenpro500" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Курица 500 грамм">
+                <img class=" product-list__image-chikenpro500" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Курица 500 грамм">
               </div>
               <div class="product-list__sum">
                 <h2 class="product-list__title">Cat Energy PRO 500 г</h2>
@@ -61,7 +60,7 @@
             <!-- Cat Energy PRO chiken 1000 г -->
             <li class="product-list__item">
               <div class="product-list__image">
-                <img class="product-list__image-chikenpro1000" src="../img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Курица 1000 грамм">
+                <img class="product-list__image-chikenpro1000" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Курица 1000 грамм">
               </div>
               <div class="product-list__sum">
               <h2 class="product-list__title">Cat Energy PRO 1000 г</h2>
@@ -85,7 +84,7 @@
             <!-- Cat Energy PRO fish 500 г -->
             <li class="product-list__item">
               <div class="product-list__image">
-                <img class="product-list__image-fishpro500" src="../img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Рыба 500 грамм">
+                <img class="product-list__image-fishpro500" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Рыба 500 грамм">
               </div>
               <div class="product-list__sum">
               <h2 class="product-list__title">Cat Energy PRO 500 г</h2>
@@ -109,7 +108,7 @@
             <!-- Cat Energy PRO fish 1000 г -->
             <li class="product-list__item">
               <div class="product-list__image">
-                <img class="product-list__image-fishpro1000" src="../img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Рыба 1000 грамм">
+                <img class="product-list__image-fishpro1000" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Рыба 1000 грамм">
               </div>
               <div class="product-list__sum">
               <h2 class="product-list__title ">Cat Energy PRO 1000 г</h2>
@@ -133,7 +132,7 @@
             <!-- Cat Energy Slim 500 г -->
             <li class="product-list__item">
               <div class="product-list__image">
-                <img class="product-list__image-slim500" src="../img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Гречка 500 грамм">
+                <img class="product-list__image-slim500" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Гречка 500 грамм">
               </div>
               <div class="product-list__sum">
               <h2 class="product-list__title">Cat Energy Slim 500 г</h2>
@@ -157,7 +156,7 @@
             <!-- Cat Energy Slim 1000 г -->
             <li class="product-list__item">
               <div class="product-list__image">
-                <img class="product-list__image-slim1000" src="../img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Гречка 1000 грамм">
+                <img class="product-list__image-slim1000" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Гречка 1000 грамм">
               </div>
               <div class="product-list__sum">
               <h2 class="product-list__title">Cat Energy Slim 1000 г</h2>
@@ -181,7 +180,7 @@
             <!-- Cat Energy Slim Rice 500 г -->
             <li class="product-list__item">
               <div class="product-list__image">
-                <img class="product-list__image-slimrice500" src="../img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Рис 500 грамм">
+                <img class="product-list__image-slimrice500" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Кэт Энэрджи Про Рис 500 грамм">
               </div>
               <div class="product-list__sum">
               <h2 class="product-list__title">Cat Energy Slim 500 г</h2>

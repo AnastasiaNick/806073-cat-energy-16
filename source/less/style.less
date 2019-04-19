@@ -1,3 +1,4 @@
+@import "node_modules/normalize.less/normalize.less";
 @import "variables.less";
 @import "mixins.less";
 @import "visually-hidden.less";
@@ -50,6 +51,14 @@ body {
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: @font-size;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
