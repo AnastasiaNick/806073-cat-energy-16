@@ -35,15 +35,17 @@
 }
 
 .course-list__ref {
-  display: block;
-  position: relative;
+  display: flex;
+  width: 123px;
   padding-top: 22px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   border-top: 1px solid #d9d9d9;
+  // position: relative;
 }
 
+/*
 .course-list__ref::after {
   content: "";
   position: absolute;
@@ -54,6 +56,7 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
+ */
 
 @media (min-width: @tablet-width) {
   .course-list {
@@ -88,11 +91,6 @@
     font-size: 20px;
     line-height: 20px;
     border-top: none;
-  }
-
-  .course-list__ref::after {
-    top: 75%;
-    right: 220px;
   }
 }
 
