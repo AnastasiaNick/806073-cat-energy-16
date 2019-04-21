@@ -11,13 +11,15 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-right: 10px;
+  font-weight: normal;
 }
 
 .contacts__text {
   margin: 0;
   text-align: left;
   font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
   color: @light-grey;
 }
 
@@ -26,19 +28,46 @@
   width: 50%;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .contacts__text span {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .contacts__title,
+  .contacts__text {
+    width: 157px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .contacts {
     position: absolute;
     top: 95px;
-    left: 55px;
+    left: 110px;
     z-index: 2;
     width: 586px;
-    padding: 65px;
+    padding: 65px 80px 63px 75px;
     background-color: @white;
   }
 
   .contacts__title,
   .contacts__text {
     width: 180px;
+  }
+
+  .contacts__text {
+    text-align: left;
   }
 }

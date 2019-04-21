@@ -1,4 +1,9 @@
 /* course-select styles */
+.course-select__title {
+  padding-top: 28px;
+  margin-bottom: 35px;
+}
+
 .course-select__description {
   margin: 0;
   margin-bottom: 35px;
@@ -16,7 +21,22 @@
     align-items: center;
   }
 
+  .course-select__title {
+    padding-top: 52px;
+    margin-bottom: 55px;
+  }
+
   .course-select__description {
     align-self: flex-start;
+    width: 350px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .course-select__title {
+    padding-top: 20px;
   }
 }

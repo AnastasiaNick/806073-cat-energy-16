@@ -2,12 +2,14 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  border-bottom: 1px solid @grey;
 }
 
 .page-header__logo {
   display: block;
   height: 55px;
   padding-top: 10px;
+  margin-bottom: 12px;
 }
 
 .page-header__logo-image {
@@ -19,5 +21,34 @@
   .page-header .container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+
+  .page-header {
+    border-bottom: none;
+  }
+
+  .page-header__logo {
+    padding-top: 0;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header .container {
+    padding-top: 53px;
+    padding-bottom: 48px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
