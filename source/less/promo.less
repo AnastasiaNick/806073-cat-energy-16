@@ -54,6 +54,12 @@
     min-height: 0;
   }
 
+  .promo__center {
+    z-index: -1;
+    top: 31%;
+    left: 4%;
+  }
+
   .promo__bottom {
     padding-top: 0;
   }
@@ -74,10 +80,6 @@
     margin-bottom: 45px;
   }
 
-  .promo__image {
-    display: none;
-  }
-
   .promo .button {
     font-size: 20px;
     line-height: 20px;
@@ -89,12 +91,22 @@
 @media (min-width: @desktop-width) {
   .promo {
     min-height: 530px;
+    padding-top: 55px;
     padding-left: 75px;
     margin-bottom: 80px;
     // box-sizing: border-box;
   }
 
+  .promo .page-title {
+    margin-bottom: 40px;
+  }
+
   .promo__slogan {
-    margin-bottom: 55px;
+    margin-bottom: 51px;
+  }
+
+  .promo__center {
+    top: -5%;
+    left: 39%;
   }
 }
