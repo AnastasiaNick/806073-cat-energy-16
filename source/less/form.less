@@ -107,10 +107,38 @@
 }
 
 .form__item-title {
+  display: inline-block;
   margin: 0;
   margin-bottom: 30px;
+  margin-right: 77px;
+  padding-right: 22px;
+  position: relative;
   font-size: 24px;
   font-weight: normal;
+  background-color: @white;
+}
+
+.form__item-title--comment {
+  margin-right: 140px;
+}
+
+.form__item-title--extra {
+  margin-right: 115px;
+}
+
+.form__item-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 3px;
+  background-color: @brand-color;
+}
+
+.form__item-title--owner::after {
+  top: 30%;
 }
 
 .form__group--mail .form__label,
@@ -343,6 +371,10 @@
 
   .form__item-title--extra {
     margin-bottom: 65px;
+  }
+
+  .form__item-title--owner::after {
+    top: 50%;
   }
 
   .form__button {
