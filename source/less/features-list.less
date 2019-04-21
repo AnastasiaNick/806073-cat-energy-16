@@ -47,6 +47,24 @@
   background: @brand-color url("../img/advantage-clock@1x.png") no-repeat center;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .features-list__logo--food {
+    background: @brand-color url("../img/advantage-leaf@2x.png") no-repeat center;
+  }
+
+  .features-list__logo--way {
+    background: @brand-color url("../img/advantage-powder@2x.png") no-repeat center;
+  }
+
+  .features-list__logo--process {
+    background: @brand-color url("../img/advantage-dining@2x.png") no-repeat center;
+  }
+
+  .features-list__logo--duration {
+    background: @brand-color url("../img/advantage-clock@2x.png") no-repeat center;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .features-list {
     display: flex;
@@ -77,6 +95,11 @@
     margin-top: 32px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .features-list__logo {
+    width: 80px;
+    height: 80px;
   }
 }
 
