@@ -22,14 +22,24 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer__contacts {
+    width: 630px;
+    padding: 65px 0 60px;
+  }
+
   .page-footer .container--copyright {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .page-footer__logo-text {
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer__contacts {
     width: 100%;
+    padding: 0;
   }
 }
