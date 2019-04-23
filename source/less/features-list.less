@@ -47,6 +47,28 @@
   background: @brand-color url("../img/advantage-clock@1x.png") no-repeat center;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .features-list__logo--food {
+    background: @brand-color url("../img/advantage-leaf@2x.png") no-repeat center;
+    background-size: 60px auto;
+  }
+
+  .features-list__logo--way {
+    background: @brand-color url("../img/advantage-powder@2x.png") no-repeat center;
+    background-size: 60px auto;
+  }
+
+  .features-list__logo--process {
+    background: @brand-color url("../img/advantage-dining@2x.png") no-repeat center;
+    background-size: 60px auto;
+  }
+
+  .features-list__logo--duration {
+    background: @brand-color url("../img/advantage-clock@2x.png") no-repeat center;
+    background-size: 60px auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .features-list {
     display: flex;
@@ -55,6 +77,7 @@
 
   .features-list .features-list__item {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -78,6 +101,38 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .features-list__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .features-list__item::after,
+  .features-list__item--one::after {
+    content: "1";
+    position: absolute;
+    top: -17%;
+    right: 36%;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .features-list__item--two::after {
+    content: "2";
+    right: 22%;
+  }
+
+  .features-list__item--three::after {
+    content: "3";
+    right: 30%;
+  }
+
+  .features-list__item--four::after {
+    content: "4";
+    right: 21%;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -99,5 +154,27 @@
 
   .features-list__item:not(:last-child) {
     margin-right: 80px;
+  }
+
+  .features-list__description {
+    width: 100%;
+  }
+
+  .features-list__item--one::after {
+    right: 7%;
+  }
+
+  .features-list__item--two::after {
+    right: 0;
+  }
+
+  .features-list__item--three::after {
+    right: -1%;
+    top: -15%;
+  }
+
+  .features-list__item--four::after {
+    right: -2%;
+    top: -15%;
   }
 }
