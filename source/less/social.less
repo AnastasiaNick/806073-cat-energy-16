@@ -12,6 +12,20 @@
   padding: 25px 0;
 }
 
+.social__link {
+  display: block;
+  font-size: 0;
+
+  &:active .social__icon {
+    opacity: 0.3;
+    fill: @brand-color;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+}
+
 @media (min-width: @tablet-width) {
   .social__list {
     border: none;
@@ -19,6 +33,21 @@
 
   .social__item {
     padding: 0;
+  }
+
+  .social__link {
+    width: 30px;
+    height: 16px;
+
+    &:hover .social__icon {
+      opacity: 1;
+      fill: @brand-color;
+    }
+
+    &:active .social__icon {
+      opacity: 0.3;
+      fill: @brand-color;
+    }
   }
 }
 
