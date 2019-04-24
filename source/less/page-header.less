@@ -60,7 +60,15 @@
     height: 59px;
   }
 
-  .page-header::after {
+  .page-header--promo .site-list__link {
+    color: @white;
+  }
+
+  .page-header--promo .site-list__link--active::after {
+    background: @white;
+  }
+
+  .page-header--promo::after {
     content: "";
     display: block;
     position: absolute;

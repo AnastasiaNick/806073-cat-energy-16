@@ -1,12 +1,13 @@
 /* copyright styles */
 .copyright {
   display: flex;
-  width: 100%;
+  // width: 100%;
   align-items: center;
   justify-content: space-between;
   margin: 18px 0 22px;
 }
 
+/*
 .copyright__author {
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -14,15 +15,42 @@
   color: @light-grey;
 }
 
+ */
+
+.copyright__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.copyright__name {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: @light-grey;
+}
+
 @media (min-width: @tablet-width) {
+  /*
   .copyright {
     width: 23%;
     margin: 0;
   }
+
+   */
+
+  .copyright__text {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  /*
   .copyright {
     width: 14%;
   }
+
+   */
 }
