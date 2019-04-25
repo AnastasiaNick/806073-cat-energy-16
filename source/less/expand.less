@@ -65,6 +65,15 @@
     font-size: 20px;
     line-height: 20px;
     width: 150px;
+    margin-bottom: 25px;
+  }
+
+  .expand__label::before {
+    top: -104px;
+    left: 45px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-plus.svg");
   }
 
   .expand__detail {
@@ -74,5 +83,12 @@
 
   .expand__button--all {
     width: 249px;
+    margin-top: 88px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .expand__button--all {
+    width: 169px;
   }
 }
