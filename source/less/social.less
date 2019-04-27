@@ -1,11 +1,12 @@
 /* social styles */
 .social__list {
   display: flex;
-  padding: 0;
-  padding-top: 20px;
-  margin: 0 auto;
+  max-height: 64px;
+  padding: 20px 0;
+  margin: 0;
   list-style: none;
   align-items: center;
+  justify-content: center;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -58,11 +59,21 @@
       opacity: 0.3;
       fill: @brand-color;
     }
+  }
 
-    .social__icon {
-      width: 30px;
-      height: 16px;
-    }
+  .social__link--vkontakte .social__icon {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram .social__icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook .social__icon {
+    width: 14px;
+    height: 28px;
   }
 }
 
