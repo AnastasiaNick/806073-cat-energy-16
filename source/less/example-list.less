@@ -16,7 +16,8 @@
 }
 
 .example-list__item {
-  width: 124px;
+  max-width: 124px;
+  width: 100%;
   padding: 15px 10px 5px;
   text-align: center;
   border: 1px solid #d9d9d9;
@@ -47,8 +48,8 @@
   }
 
   .example-list__item {
-    width: 162px;
-    padding: 20px 10px 5px;
+    max-width: 162px;
+    padding: 23px 10px 20px;
   }
 
   .example-list__value {
@@ -62,7 +63,7 @@
   }
 
   .example-list__wrapper {
-    max-width: 105px;
+    max-width: inherit;
     margin-bottom: -25px;
     padding: 0;
     background-color: @white;
