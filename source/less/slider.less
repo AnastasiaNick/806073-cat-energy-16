@@ -61,6 +61,36 @@
 }
 
 @media (min-width: @tablet-width) {
+  .slider__list {
+    display: flex;
+    position: relative;
+    height: 560px;
+    width: 100%;
+  }
+
+  .slider__item {
+    width: 50%;
+    height: 517px;
+    //position: absolute;
+    overflow: hidden;
+  }
+
+  .slider__item--fatcat img {
+    height: 100%;
+    width: 677px;
+    margin-left: 20px;
+  }
+
+  .slider__item--slimcat {
+    display: block;
+  }
+
+  .slider__item--slimcat img {
+    height: 100%;
+    width: 545px;
+    margin-left: -265px;
+  }
+
   .slider__toggles {
     margin: 0 70px;
   }
