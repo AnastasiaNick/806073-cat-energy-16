@@ -7,6 +7,11 @@
 
 .extra-list__item {
   padding: 13px 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.extra-list__item:last-of-type {
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .extra-list__title {
@@ -14,6 +19,7 @@
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 16px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -26,7 +32,7 @@
 .extra-list__value {
   width: 50%;
   font-family: "Arial", sans-serif;
-  line-height: 20px;
+  line-height: 14px;
   color: @light-grey;
 }
 
@@ -62,6 +68,7 @@
   .extra-list__field,
   .extra-list__value {
     font-size: 16px;
+    line-height: 20px;
   }
 
   .extra-list__field {
@@ -75,16 +82,37 @@
 }
 
 @media (min-width: @desktop-width) {
+  .extra-list {
+    width: 75%;
+  }
+
   .extra-list__item {
     flex-wrap: nowrap;
   }
 
+  .extra-list__title {
+    width: 30%;
+  }
+
   .extra-list__info {
+    width: 30%;
     margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .extra-list__field {
+    text-align: left;
+  }
+
+  .extra-list__value {
+    text-align: right;
   }
 
   .extra-list__button {
     width: 245px;
     margin-top: 0;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
