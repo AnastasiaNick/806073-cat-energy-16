@@ -63,9 +63,10 @@
 @media (min-width: @tablet-width) {
   .slider__list {
     display: flex;
-    position: relative;
     height: 560px;
     width: 100%;
+    position: relative;
+    z-index: 1;
   }
 
   .slider__item {
@@ -77,8 +78,8 @@
 
   .slider__item--fatcat img {
     height: 100%;
-    width: 677px;
-    margin-left: 20px;
+    width: 690px;
+    margin-left: 15px;
   }
 
   .slider__item--slimcat {
@@ -87,12 +88,14 @@
 
   .slider__item--slimcat img {
     height: 100%;
-    width: 545px;
-    margin-left: -265px;
+    width: 690px;
+    margin-left: -340px;
   }
 
   .slider__toggles {
     margin: 0 70px;
+    position: relative;
+    z-index: 1;
   }
 
   .slider__toggle {

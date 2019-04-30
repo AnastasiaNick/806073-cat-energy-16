@@ -110,7 +110,8 @@
   display: inline-block;
   margin: 0;
   margin-bottom: 30px;
-  margin-right: 77px;
+  // margin-right: 77px;
+  margin-right: auto;
   padding-right: 22px;
   position: relative;
   font-size: 24px;
@@ -118,6 +119,7 @@
   background-color: @white;
 }
 
+/*
 .form__item-title--comment {
   margin-right: 140px;
 }
@@ -126,15 +128,17 @@
   margin-right: 115px;
 }
 
+ */
+
 .form__item-title::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
+  left: calc(100% + 20px);
+  width: 158px;
   height: 3px;
   background-color: @brand-color;
+  z-index: -1;
 }
 
 .form__item-title--owner::after {

@@ -31,9 +31,21 @@
 
 @media (min-width: @tablet-width) {
   .example {
+    position: relative;
     padding: 45px 20px 65px;
     background-color: @white;
     border-top: 1px solid #d9d9d9;
+  }
+
+  .example::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 46%;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    z-index: 0;
   }
 
   .example__title {
