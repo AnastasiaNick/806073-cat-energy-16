@@ -119,6 +119,10 @@
   background-color: @white;
 }
 
+.form__item-title--owner {
+  width: 205px;
+}
+
 /*
 .form__item-title--comment {
   margin-right: 140px;
@@ -135,7 +139,7 @@
   position: absolute;
   top: 50%;
   left: calc(100% + 20px);
-  width: 158px;
+  width: 100vw;
   height: 3px;
   background-color: @brand-color;
   z-index: -1;
@@ -236,6 +240,21 @@
 @media (min-width: @tablet-width) {
   .form {
     width: 630px;
+  }
+
+  .form__item-title--owner {
+    width: unset;
+  }
+
+  .form__item-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 40px);
+    width: 100vw;
+    height: 3px;
+    background-color: @brand-color;
+    z-index: -1;
   }
 
   .form__item {
