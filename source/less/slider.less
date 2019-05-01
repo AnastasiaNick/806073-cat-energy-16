@@ -118,7 +118,7 @@
   .slider__roller {
     position: absolute;
     top: -15px;
-    left: 50%;
+    left: 47%;
     width: 34px;
     height: 34px;
     background-color: @white;
@@ -139,5 +139,19 @@
     height: 8px;
     border-radius: 50%;
     background-color: @brand-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider {
+    margin-top: -50px;
+  }
+
+  .slider__item--fatcat img {
+    margin-left: -60px;
+  }
+
+  .slider__item--slimcat img {
+    margin-left: -365px;
   }
 }

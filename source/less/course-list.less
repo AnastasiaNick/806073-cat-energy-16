@@ -76,11 +76,22 @@
 
 .course-list__ref {
   display: flex;
+  position: relative;
   width: 123px;
   padding-top: 18px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.course-list__ref::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 20px;
+  right: 5px;
+  background: url("../img/icon-right-arrow-long.svg");
 }
 
 @media (min-width: @tablet-width) {
@@ -157,6 +168,11 @@
     line-height: 20px;
     border-top: none;
   }
+
+  .course-list__ref::after {
+    top: 40px;
+    right: -35px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -190,6 +206,11 @@
 
   .course-list__ref {
     padding-top: 10px;
+  }
+
+  .course-list__ref::after {
+    top: 15px;
+    right: -25px;
   }
 
   .course-list__item--slim .course-list__title::before,
