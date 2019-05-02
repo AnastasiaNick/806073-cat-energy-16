@@ -8,7 +8,7 @@
 .course-list__item {
   margin-bottom: 20px;
   padding: 35px 20px 20px;
-  background-color: @grey;
+  background-color: #f2f2f2;
 }
 
 .course-list__title {
@@ -82,6 +82,16 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  &:hover::after {
+    width: 32px;
+    right: -35px;
+    background: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .course-list__ref::after {

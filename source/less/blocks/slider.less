@@ -101,6 +101,15 @@
   .slider__toggle {
     padding: 5px 0;
     border-bottom: 1px dotted #d9d9d9;
+    font-size: 20px;
+
+    &:hover {
+      border-bottom: 1px solid @light-grey;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .slider__visual {
@@ -125,6 +134,15 @@
     border: 1px solid #d9d9d9;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      border: 2px solid @brand-color;
+    }
   }
 
   .slider__roller::after {
