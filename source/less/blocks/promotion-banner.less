@@ -1,16 +1,21 @@
 /* promotion-banner styles */
 .promotion-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   width: 100%;
   min-height: 290px;
   margin-top: 40px;
-  padding: 55px 55px 43px;
+  padding: 62px 10px 45px;
   background: @brand-color url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
   background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
     width: 100%;
+    max-height: 290px;
   }
 }
 
@@ -26,13 +31,17 @@
 }
 
 .promotion-banner__icon {
+  height: 60px;
   fill: @white;
 }
 
 @media (min-width: @tablet-width) {
   .promotion-banner {
+    flex-direction: row;
+    align-items: center;
     min-height: 200px;
     width: 100%;
+    padding: 60px 90px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -40,19 +49,42 @@
       width: 100%;
     }
   }
+
+  .promotion-banner__text {
+    margin: 0;
+    margin-right: 22px;
+    text-align: left;
+  }
+
+  .promotion-banner__icon {
+    align-self: flex-start;
+    margin-top: 5px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .promotion-banner {
+    flex-direction: column;
+    align-items: center;
     max-width: 245px;
-    min-height: 289px;
+    min-height: 290px;
     margin-left: 80px;
     margin-top: 0;
+    padding: 62px 10px 45px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
       width: 245px;
     }
+  }
+
+  .promotion-banner__text {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .promotion-banner__icon {
+    align-self: center;
   }
 }

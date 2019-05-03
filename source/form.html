@@ -46,15 +46,15 @@
               <h3 class="visually-hidden">Данные кота</h3>
               <div class="form__group form__group--name">
                 <label class="form__label" for="catname">Имя:*</label>
-                <input class="form__input" id="catname" type="text" name="catname" value="" placeholder="Барсик">
+                <input class="form__input" id="catname" type="text" name="catname" value="" placeholder="Барсик" required>
               </div>
               <div class="form__group form__group--weight">
                 <label class="form__label" for="weight">Вес (кг):*</label>
-                <input class="form__input" id="weight" type="text" name="weight" value="" placeholder="7">
+                <input class="form__input" id="weight" type="text" name="weight" value="" placeholder="7" required>
               </div>
               <div class="form__group form__group--age">
                 <label class="form__label" for="age">Возраст (лет):</label>
-                <input class="form__input" id="age" type="text" name="age" value="" placeholder="7">
+                <input class="form__input" id="age" type="text" name="age" value="" placeholder="7" required>
               </div>
             </div>
             <div class="form__item form__item--radio">
@@ -76,11 +76,13 @@
           <div class="form__item form__item--owner">
             <div class="form__group form__group--mail">
               <label class="form__label" for="e-mail">E-mail:*</label>
-              <input class="form__input" id="e-mail" type="email" name="e-mail" value="" placeholder="kuklachev@gmail.com">
+              <input class="form__input" id="e-mail" type="email" name="e-mail" value="" placeholder="kuklachev@gmail.com" required>
+              <svg class="form__icon form__icon--mail" width="17"><use xlink:href="#icon-mail"></use></svg>
             </div>
             <div class="form__group form__group--phone">
               <label class="form__label" for="phone">Телефон:*</label>
-              <input class="form__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
+              <input class="form__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90" required>
+              <svg class="form__icon form__icon--phone" width="20"><use xlink:href="#icon-phone"></use></svg>
             </div>
           </div>
           <h3 class="form__item-title form__item-title--comment">Комментарий</h3>

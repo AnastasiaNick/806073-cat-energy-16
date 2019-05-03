@@ -6,9 +6,20 @@
 }
 
 .site-list__item {
-  border-top: 1px solid @grey;
-  border-bottom: 1px solid @grey;
+  // border-top: 1px solid @grey;
+  // border-bottom: 1px solid @grey;
+  position: relative;
   box-sizing: border-box;
+}
+
+.site-list__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: calc(100% + 40px);
+  background-color: @grey;
+  height: 1px;
 }
 
 .site-list__link {
