@@ -1,21 +1,10 @@
 /* copyright styles */
 .copyright {
   display: flex;
-  // width: 100%;
   align-items: center;
   justify-content: space-between;
   margin: 0;
 }
-
-/*
-.copyright__author {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  color: @light-grey;
-}
-
- */
 
 .copyright__text {
   display: flex;
@@ -27,7 +16,7 @@
 
 .copyright__name {
   display: inline-block;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: @light-grey;
@@ -62,10 +51,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  /*
-  .copyright {
-    width: 14%;
+  .copyright__name {
+    padding-top: 11px;
   }
 
-   */
+  .copyright__icon {
+    margin: 14px -19px 0 15px;
+  }
 }

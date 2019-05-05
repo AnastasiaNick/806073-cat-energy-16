@@ -10,14 +10,13 @@
 
 .example__description {
   margin-bottom: 28px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @light-grey;
 }
 
 .example__costs {
-  // display: block;
   margin-top: 32px;
   line-height: 20px;
   text-transform: uppercase;
@@ -88,11 +87,12 @@
 @media (min-width: @desktop-width) {
   .example {
     border-top: none;
+    padding-top: 0;
   }
 
   .example::after {
-    height: 66%;
-    background: linear-gradient(to right, #f2f2f2 71.5%, #eaeaea 28.5%);
+    height: 77%;
+    background: linear-gradient(to right, #f2f2f2 72.5%, #eaeaea 27.5%);
   }
 
   .example__info,
@@ -102,6 +102,7 @@
 
   .example__info {
     padding-right: 135px;
+    margin-bottom: 0;
   }
 
   .example__title {
