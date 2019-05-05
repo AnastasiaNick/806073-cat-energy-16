@@ -6,7 +6,7 @@
 }
 
 .extra-list__item {
-  padding: 13px 0;
+  padding: 13px 0 17px;
   border-top: 1px solid #d9d9d9;
 }
 
@@ -16,7 +16,7 @@
 
 .extra-list__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
@@ -26,11 +26,14 @@
 .extra-list__info {
   width: 100%;
   margin-bottom: 15px;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .extra-list__field,
 .extra-list__value {
   width: 50%;
+  padding: 0;
   font-family: "Arial", sans-serif;
   line-height: 14px;
   color: @light-grey;
@@ -38,6 +41,11 @@
 
 .extra-list__value {
   text-align: right;
+}
+
+.extra-list__button {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {

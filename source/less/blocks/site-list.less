@@ -6,8 +6,6 @@
 }
 
 .site-list__item {
-  // border-top: 1px solid @grey;
-  // border-bottom: 1px solid @grey;
   position: relative;
   box-sizing: border-box;
 }
@@ -41,6 +39,10 @@
 
   .site-list__item {
     border: none;
+  }
+
+  .site-list__item::after {
+    display: none;
   }
 
   .site-list__link {

@@ -8,7 +8,7 @@
 .form__item {
   border: none;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   margin: 0;
   box-sizing: border-box;
 }
@@ -73,15 +73,16 @@
 
 .form__icon {
   position: absolute;
-  right: 20px;
 }
 
 .form__icon--mail {
   height: 13px;
+  right: 17px;
 }
 
 .form__icon--phone {
   height: 20px;
+  right: 14px;
 }
 
 .form__item--radio {
@@ -165,11 +166,11 @@
   width: 205px;
 }
 
-/*
 .form__item-title--comment {
-  margin-right: 140px;
+  margin-bottom: 32px;
 }
 
+/*
 .form__item-title--extra {
   margin-right: 115px;
 }
@@ -180,7 +181,8 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: calc(100% + 20px);
+  // left: calc(100% + 20px);
+  left: 100%;
   width: 100vw;
   height: 3px;
   background-color: @brand-color;
@@ -210,7 +212,7 @@
 
 .form__area {
   width: 100%;
-  padding: 12px;
+  padding: 12px 13px;
   margin-bottom: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -237,8 +239,8 @@
 .form__input[type="checkbox"] + span::before {
   content: "";
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   top: -5px;
   left: 0;
   border: 1px solid @grey;

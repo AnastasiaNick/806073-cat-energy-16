@@ -1,7 +1,7 @@
 /* example styles */
 .example {
   padding: 30px 20px 35px;
-  background-color: @grey;
+  background-color: #f2f2f2;
 }
 
 .example__title {
@@ -9,7 +9,7 @@
 }
 
 .example__description {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -26,13 +26,13 @@
 
 .example__toggles {
   margin: 0;
-  margin-top: 33px;
+  margin-top: 31px;
 }
 
 @media (min-width: @tablet-width) {
   .example {
     position: relative;
-    padding: 45px 20px 65px;
+    padding: 45px 20px 69px;
     background-color: @white;
     border-top: 1px solid #d9d9d9;
   }
@@ -43,9 +43,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 46%;
+    height: 43%;
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     z-index: 0;
+  }
+
+  .example__info {
+    margin-bottom: 85px;
   }
 
   .example__title {
@@ -54,7 +58,7 @@
 
   .example__description {
     padding-right: 25px;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
   }

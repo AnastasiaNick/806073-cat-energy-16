@@ -1,6 +1,6 @@
 /* slider styles */
 .slider {
-  margin-top: 40px;
+  margin-top: 37px;
 }
 
 .slider__list {
@@ -13,19 +13,24 @@
   box-sizing: border-box;
 }
 
-.slider__item img {
-  width: 100%;
+.slider__item--fatcat {
+  max-width: 280px;
 }
 
 .slider__item--slimcat {
   display: none;
 }
 
+.slider__item img {
+  display: block;
+  margin-left: -20px;
+}
+
 .slider__toggles {
   display: flex;
   justify-content: space-between;
   margin-left: 44px;
-  margin-right: 44px;
+  margin-right: 40px;
 }
 
 .slider__toggle {
@@ -82,6 +87,10 @@
     margin-left: 15px;
   }
 
+  .slider__item--fatcat {
+    max-width: unset;
+  }
+
   .slider__item--slimcat {
     display: block;
   }
@@ -93,7 +102,7 @@
   }
 
   .slider__toggles {
-    margin: 0 70px;
+    margin: -30px 70px 0;
     position: relative;
     z-index: 1;
   }
