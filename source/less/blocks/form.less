@@ -288,17 +288,22 @@
 
   .form__item-title--owner {
     width: unset;
+    padding-right: 42px;
   }
 
   .form__item-title::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 58%;
     right: calc(100% + 40px);
     width: 100vw;
     height: 3px;
     background-color: @brand-color;
     z-index: -1;
+  }
+
+  .form__item-title::after {
+    top: 58%;
   }
 
   .form__item {
@@ -315,7 +320,7 @@
     display: flex;
     width: 100%;
     margin-top: 15px;
-    margin-bottom: 72px;
+    margin-bottom: 75px;
   }
 
   .form__label,
@@ -343,14 +348,20 @@
 
   .form__item-title {
     margin-bottom: 78px;
+    padding-right: 42px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .form__item-title--comment {
+    margin-bottom: 75px;
   }
 
   .form__note {
     font-size: 16px;
     margin-left: 10px;
     margin-bottom: 0;
+    margin-top: 18px;
   }
 
   .form__item-cat {
@@ -359,7 +370,7 @@
 
   .form__item--radio {
     margin-bottom: 0;
-    padding: 33px 25px;
+    padding: 33px 25px 35px;
     border: 1px solid @grey;
   }
 
@@ -445,7 +456,7 @@
   }
 
   .form__item-title--extra {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 
   .form__item-title--owner::after {

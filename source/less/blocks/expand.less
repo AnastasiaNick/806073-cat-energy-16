@@ -65,9 +65,13 @@
 
 @media (min-width: @tablet-width) {
   .expand {
-    padding: 105px 0;
+    padding: 105px 0 40px;
     background-color: @white;
     border: 1px solid @grey;
+  }
+
+  .expand::before {
+    display: none;
   }
 
   .expand__label {
@@ -75,10 +79,11 @@
     line-height: 20px;
     width: 150px;
     margin-bottom: 25px;
+    padding-top: 10px;
   }
 
   .expand__label::before {
-    top: -104px;
+    top: -100px;
     left: 45px;
     width: 60px;
     height: 60px;
@@ -92,7 +97,7 @@
 
   .expand__button--all {
     width: 249px;
-    margin-top: 88px;
+    margin-top: 86px;
   }
 }
 

@@ -31,6 +31,7 @@
 @media (min-width: @tablet-width) {
   .catalog {
     display: flex;
+    margin-bottom: 35px;
   }
 
   .catalog__title {
@@ -40,7 +41,9 @@
 
   .catalog__title--extra {
     padding-top: 0;
-    padding-left: 35px;
+    padding-left: 37px;
+    padding-right: 15px;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -48,12 +51,16 @@
   .catalog__title--extra::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 58%;
     right: 100%;
     width: 100vw;
     height: 3px;
     background-color: @brand-color;
     z-index: -1;
+  }
+
+  .catalog__title--extra::after {
+    top: 58%;
   }
 }
 
