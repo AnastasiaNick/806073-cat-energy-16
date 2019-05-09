@@ -87,7 +87,7 @@
   }
 
   .slider__item--fatcat {
-    max-width: unset;
+    max-width: none;
   }
 
   .slider__item--slimcat {
@@ -170,7 +170,19 @@
 
 @media (min-width: @desktop-width) {
   .slider {
+    position: relative;
     margin-top: -55px;
+  }
+
+  .slider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70%;
+    background: linear-gradient(to right, #f2f2f2 53%, #eaeaea 47%);
+    z-index: 0;
   }
 
   .slider__item--fatcat {
@@ -179,6 +191,7 @@
 
   .slider__item--slimcat {
     width: 285px;
+    margin-left: auto;
   }
 
   .slider__item--fatcat img {
