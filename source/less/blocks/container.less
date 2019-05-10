@@ -4,9 +4,17 @@
   margin: 0 auto;
 }
 
+.container--contacts {
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
   .container {
     width: @width-tablet;
+  }
+
+  .container--contacts {
+    width: 100%;
   }
 
   .container--promo {
@@ -16,8 +24,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .container {
+  .container,
+  .container--contacts {
     width: @width-desktop;
+  }
+
+  .container--contacts {
+    margin: 0 auto;
   }
 
   .container--promo {
