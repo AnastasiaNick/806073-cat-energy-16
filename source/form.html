@@ -37,7 +37,7 @@
     </header>
     <main class="page-main">
       <div class="container">
-        <h1 class="page-title page__title--form">Подбор программы</h1>
+        <h1 class="page-title page-title--form">Подбор программы</h1>
       <section class="course-select">
         <form action="https://echo.htmlacademy.ru" method="post" class="course-select__form form">
           <p class="course-select__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -175,22 +175,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
   </body>
 </html>

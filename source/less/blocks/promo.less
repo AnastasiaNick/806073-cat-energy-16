@@ -11,6 +11,12 @@
   min-height: 305px;
   text-align: center;
   width: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    width: 100%;
+    min-height: 305px;
+  }
 }
 
 .promo__title {
@@ -96,7 +102,6 @@
     padding-top: 55px;
     padding-left: 75px;
     margin-bottom: 80px;
-    // box-sizing: border-box;
   }
 
   .promo .page-title {
