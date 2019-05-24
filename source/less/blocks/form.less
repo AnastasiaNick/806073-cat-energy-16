@@ -173,16 +173,12 @@
 .form__item-title::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 14px;
   left: 100%;
   width: 100vw;
   height: 3px;
   background-color: @brand-color;
   z-index: -1;
-}
-
-.form__item-title--owner::after {
-  top: 30%;
 }
 
 .form__group--mail .form__label,
@@ -273,6 +269,17 @@
   margin-top: 43px;
 }
 
+.form__item-title::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: calc(100% + 37px);
+  width: 100vw;
+  height: 3px;
+  background-color: @brand-color;
+  z-index: -1;
+}
+
 @media (min-width: @tablet-width) {
   .form {
     width: 630px;
@@ -283,19 +290,9 @@
     padding-right: 42px;
   }
 
-  .form__item-title::before {
-    content: "";
-    position: absolute;
-    top: 58%;
-    right: calc(100% + 40px);
-    width: 100vw;
-    height: 3px;
-    background-color: @brand-color;
-    z-index: -1;
-  }
 
   .form__item-title::after {
-    top: 58%;
+    top: 14px;
   }
 
   .form__item {
@@ -451,10 +448,6 @@
   .form__item-title--extra {
     width: 250px;
     margin-bottom: 67px;
-  }
-
-  .form__item-title--owner::after {
-    top: 58%;
   }
 
   .form__button {
